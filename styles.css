@@ -1,0 +1,206 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #06121E;
+}
+
+/* Header styles */
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Navbar styles */
+
+/* Navbar styles */
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Distribuye espacio entre el logo y el menú */
+    padding: 1rem;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #E00813; /* Efecto hover en los enlaces */
+}
+
+.logo-text {
+    margin-left: 20px; /* Ajusta la posición del logo si es necesario */
+    color: #E00813;
+    max-width: 400px;
+    font-size: 40px;
+}
+
+
+/* Hero sections styles */
+.hero {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: flex-start; /* Alinea horizontalmente al inicio (izquierda) */
+    text-align: left; /* Alinea el texto a la izquierda */
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; /* Ocupa el tamaño completo de la pantalla */
+    filter: brightness(90%);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    z-index: 0; /* Asegura que esté debajo del contenido */
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin deformarse */
+    filter: brightness(50%);
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el texto verticalmente */
+    align-items: flex-start; /* Alinea el contenido a la izquierda */
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    max-width: 800px;
+    font-size: 25px;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea todo el contenido al inicio (izquierda) */
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    filter: brightness(90%);
+}
+
+.hero h2 {
+    color: #5c0036;
+    font-size: 78px;
+    margin: 0;
+}
+
+.hero p {
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.hero button {
+    background-color: #E00813;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #C00711;
+}
+/* Section styles */
+
+section {
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+h3, h4 {
+    color: #FFFFFF; /* Títulos en blanco */
+    
+}
+    
+
+
+section h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+article {
+    text-align: center;
+}
+
+.grid article img {
+    width: 100%;
+    height: 280px; /* Ajusta el tamaño de la imagen */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+
+article img:hover {
+    transform: scale(1.05);
+}
+
+article h4 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+
+
+/* Footer styles */
+footer {
+    background-color: #0B1A2A;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #FFFFFF;
+    border-top: 2px solid #E00813;
+}
+
+footer p {
+    margin: 5px 0;
+}
